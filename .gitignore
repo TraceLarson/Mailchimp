@@ -1,0 +1,20 @@
+# MacOS
+.DS_Store
+
+# Dependency directories
+node_modules/
+vendor
+
+# Logs
+logs
+*.log
+npm-debug.log*
+var
+
+# dotenv environment variable files
+.env
+
+# PHPStorm IDE files
+.idea*
+.idea/
+*.xml

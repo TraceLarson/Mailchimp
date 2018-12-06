@@ -1,0 +1,29 @@
+{
+  "name": "mailchimp",
+  "version": "1.0.0",
+  "description": "Newsletter signup form using Mailchimp",
+  "main": "bin/www",
+  "scripts": {
+    "start": "node bin/www",
+    "dev": "nodemon bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TraceLarson/Mailchimp.git"
+  },
+  "author": "Trace Larson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TraceLarson/Mailchimp/issues"
+  },
+  "homepage": "https://github.com/TraceLarson/Mailchimp#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.7"
+  }
+}
