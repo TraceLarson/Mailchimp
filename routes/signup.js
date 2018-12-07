@@ -10,11 +10,7 @@ isInputEmpty = (req, res, next) => {
 };
 
 router.post("/", isInputEmpty, (req, res, next) => {
-  req.root.length > 0
-    ? res.sendFile(path.join(__dirname, "/../public/fail.html"), {
-        emptyValues: req.root
-      })
-    : res.sendFile(path.join(__dirname, "/../public/success.html"));
+  req.root.length > 0 ? res.redirect("fail") : res.redirect("/success");
 });
 
 module.exports = router;
