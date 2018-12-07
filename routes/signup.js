@@ -3,6 +3,7 @@ const router = express.Router();
 const path = require("path");
 const bodyParser = require("body-parser");
 const request = require("request");
+const dotenv = require("dotenv");
 
 isInputEmpty = (req, res, next) => {
   //   const emptyValues = Object.keys(req.body).filter(value => !value);
@@ -32,10 +33,12 @@ router.post("/", isInputEmpty, (req, res, next) => {
   const postData = JSON.stringify(data);
 
   const options = {
-    url: "https://us19.api.mailchimp.com/3.0/lists/daaa0c6a2a",
+    url: `https://us19.api.mailchimp.com/3.0/lists/${
+      process.env.MAILCHIMP_LARSON_MEDIA_LIST_ID
+    }`,
     method: "POST",
     headers: {
-      Authorization: "auth 66d110a02a538d1d9beb9d3d3172c322-us19"
+      Authorization: `auth ${process.env.MAILCHIMP_API_KEY}`
     },
     body: postData
   };

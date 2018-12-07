@@ -19,7 +19,7 @@
   "homepage": "https://github.com/TraceLarson/Mailchimp#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "dotenv": "^6.1.0",
+    "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "request": "^2.88.0"
   },
